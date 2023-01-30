@@ -1,0 +1,20 @@
+/* 时间轴样式 */
+.ant-timeline-item-tail{
+    border-width: 3px !important;
+    border-color: var(--primary-color) !important;
+}
+.ant-timeline-item-head{
+    background-color: var(--sider-bg-color) !important;
+}
+.ant-timeline-item-head-custom{
+    padding: 0 !important;
+    left: 6px !important;
+}
+
+/* 分页器 */
+.ant-pagination-item-link,.ant-pagination-item{
+    border: none !important;
+}
+.ant-pagination-item-active a{
+    color: var(--primary-color) !important;
+}

@@ -1,0 +1,34 @@
+.article{
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 15px;
+    font-family: 'Ubuntu,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif';
+    .title{
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--text-color-1);
+        margin-bottom: 10px;
+    }
+    .tags {
+        font-size: 14px;
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        color: var(--text-color-3);
+        background-color: var(--sider-bg-color);
+        .tag {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-right:18px;
+            .content {
+                margin-left: 5px;
+            }
+        }
+    }
+    .richText{
+        padding-top: 30px;
+        // cursor: text !important;
+    }
+}

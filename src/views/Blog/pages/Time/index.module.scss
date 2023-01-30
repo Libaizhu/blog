@@ -1,0 +1,19 @@
+.axis{
+    max-width: 900px;
+    min-height: calc(100vh - 100px);
+    margin: 0 auto;
+    padding: 20px 15px;
+    background-color: var(--sider-bg-color);
+    .card{
+        color: #fff;
+        border-radius:2px;
+        .title{
+            padding: 10px;
+            background-color: var(--primary-color);
+            cursor: pointer;
+        }
+        .time{
+            color: var(--text-color-2);
+        }
+    }    
+}

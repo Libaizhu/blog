@@ -1,0 +1,46 @@
+$inputColor:orange;
+$bg:#ffffff;
+
+
+.custom-input-wrap {
+    margin: 12px 2px;
+    position: relative;
+    color: $inputColor;
+    width: 100%;
+    .input {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        border: none;
+        font: inherit;
+        color: $inputColor;
+        background-color: transparent;
+        outline: 2px solid $bg;
+        transition: all .3s;
+        border-radius: 0;
+        border-bottom: 1px solid $inputColor;
+    }
+
+    .label {
+        position: absolute;
+        display: inline-block;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+        transform: translate(10px, 10px);
+        transition: transform .3s;
+    }
+
+    .input:focus+.label,
+    .input:valid+.label {
+        transform: translate(15px, -10px) scale(0.95);
+        background-color: $bg;
+        padding-inline: 5px;
+    }
+
+    .input:is(:focus, :valid) {
+        border-radius: 4px;
+        border-bottom: none;
+        outline-color: $inputColor;
+    }
+}
